@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/PurchaseShares/PurchaseShares?wsdl" uri="wsdl/localhost_8080/PurchaseShares/PurchaseShares.wsdl"/>
+    <system systemId="http://localhost:8080/PurchaseShares/PurchaseShares?xsd=1" uri="wsdl/localhost_8080/PurchaseShares/PurchaseShares.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PurchaseShares/PurchaseShares?xsd=2" uri="wsdl/localhost_8080/PurchaseShares/PurchaseShares.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/PurchaseShares/PurchaseShares?xsd=3" uri="wsdl/localhost_8080/PurchaseShares/PurchaseShares.xsd_3.xsd"/>
+</catalog>

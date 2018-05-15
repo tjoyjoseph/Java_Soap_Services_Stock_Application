@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shareTrade xmlns="http://xml.netbeans.org/schema/Shows">
+    <companyShares>
+        <companyName>AXT Inc</companyName>
+        <companySymbol>AXTI</companySymbol>
+        <numOfAvailShares>40386</numOfAvailShares>
+        <sharePrice>
+            <currency>GBP</currency>
+            <value>9.45</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+    <companyShares>
+        <companyName>Apricus Biosciences Inc.</companyName>
+        <companySymbol>APRI</companySymbol>
+        <numOfAvailShares>28648</numOfAvailShares>
+        <sharePrice>
+            <currency>GBP</currency>
+            <value>2.64</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+    <companyShares>
+        <companyName>JPMorgan Disciplined HY</companyName>
+        <companySymbol>JPHY</companySymbol>
+        <numOfAvailShares>50</numOfAvailShares>
+        <sharePrice>
+            <currency>GBP</currency>
+            <value>51.5</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+    <companyShares>
+        <companyName></companyName>
+        <companySymbol></companySymbol>
+        <numOfAvailShares>0</numOfAvailShares>
+        <sharePrice>
+            <currency></currency>
+            <value>0.0</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+    <companyShares>
+        <companyName>Xtrackers MSCI All World ex US Hedged Equity</companyName>
+        <companySymbol>DBAW</companySymbol>
+        <numOfAvailShares>1317</numOfAvailShares>
+        <sharePrice>
+            <currency>GBP</currency>
+            <value>28.975</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+    <companyShares>
+        <companyName>RubyRose</companyName>
+        <companySymbol>RRS</companySymbol>
+        <numOfAvailShares>19584</numOfAvailShares>
+        <sharePrice>
+            <currency>GBP</currency>
+            <value>5.98</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+    <companyShares>
+        <companyName>Bob</companyName>
+        <companySymbol>BYB</companySymbol>
+        <numOfAvailShares>98888</numOfAvailShares>
+        <sharePrice>
+            <currency>GBP</currency>
+            <value>2.99</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+    <companyShares>
+        <companyName>Toby's Stock</companyName>
+        <companySymbol>TSK</companySymbol>
+        <numOfAvailShares>89732</numOfAvailShares>
+        <sharePrice>
+            <currency>GBP</currency>
+            <value>125.77</value>
+            <dateOfLastUpdate>23/1/2018</dateOfLastUpdate>
+        </sharePrice>
+    </companyShares>
+</shareTrade>

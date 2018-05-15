@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://shares.me.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="PurchaseShares" targetNamespace="http://shares.me.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PurchaseShares/PurchaseShares?xsd=1" namespace="http://xml.netbeans.org/schema/Shows" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PurchaseShares/PurchaseShares?xsd=2" namespace="http://shares.me.org/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PurchaseShares/PurchaseShares?xsd=3" namespace="http://DOCwebServices/" />
+    </xsd:schema>
+  </types>
+  <message name="getCurrencyNames">
+    <part name="parameters" element="tns:getCurrencyNames" />
+  </message>
+  <message name="getCurrencyNamesResponse">
+    <part name="parameters" element="tns:getCurrencyNamesResponse" />
+  </message>
+  <message name="getShares">
+    <part name="parameters" element="tns:getShares" />
+  </message>
+  <message name="getSharesResponse">
+    <part name="parameters" element="tns:getSharesResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="IOException_Exception">
+    <part xmlns:ns1="http://DOCwebServices/" name="fault" element="ns1:IOException" />
+  </message>
+  <message name="ParseException_Exception">
+    <part xmlns:ns2="http://DOCwebServices/" name="fault" element="ns2:ParseException" />
+  </message>
+  <message name="buyShares">
+    <part name="parameters" element="tns:buyShares" />
+  </message>
+  <message name="buySharesResponse">
+    <part name="parameters" element="tns:buySharesResponse" />
+  </message>
+  <message name="userLogin">
+    <part name="parameters" element="tns:userLogin" />
+  </message>
+  <message name="userLoginResponse">
+    <part name="parameters" element="tns:userLoginResponse" />
+  </message>
+  <message name="addStock">
+    <part name="parameters" element="tns:addStock" />
+  </message>
+  <message name="addStockResponse">
+    <part name="parameters" element="tns:addStockResponse" />
+  </message>
+  <message name="getFname">
+    <part name="parameters" element="tns:getFname" />
+  </message>
+  <message name="getFnameResponse">
+    <part name="parameters" element="tns:getFnameResponse" />
+  </message>
+  <message name="addUser">
+    <part name="parameters" element="tns:addUser" />
+  </message>
+  <message name="addUserResponse">
+    <part name="parameters" element="tns:addUserResponse" />
+  </message>
+  <portType name="PurchaseShares">
+    <operation name="getCurrencyNames">
+      <input wsam:Action="http://shares.me.org/PurchaseShares/getCurrencyNamesRequest" message="tns:getCurrencyNames" />
+      <output wsam:Action="http://shares.me.org/PurchaseShares/getCurrencyNamesResponse" message="tns:getCurrencyNamesResponse" />
+    </operation>
+    <operation name="getShares">
+      <input wsam:Action="http://shares.me.org/PurchaseShares/getSharesRequest" message="tns:getShares" />
+      <output wsam:Action="http://shares.me.org/PurchaseShares/getSharesResponse" message="tns:getSharesResponse" />
+      <fault wsam:Action="http://shares.me.org/PurchaseShares/getShares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://shares.me.org/PurchaseShares/getShares/Fault/IOException_Exception" name="IOException_Exception" message="tns:IOException_Exception" />
+      <fault wsam:Action="http://shares.me.org/PurchaseShares/getShares/Fault/ParseException_Exception" name="ParseException_Exception" message="tns:ParseException_Exception" />
+    </operation>
+    <operation name="buyShares">
+      <input wsam:Action="http://shares.me.org/PurchaseShares/buySharesRequest" message="tns:buyShares" />
+      <output wsam:Action="http://shares.me.org/PurchaseShares/buySharesResponse" message="tns:buySharesResponse" />
+      <fault wsam:Action="http://shares.me.org/PurchaseShares/buyShares/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="userLogin">
+      <input wsam:Action="http://shares.me.org/PurchaseShares/userLoginRequest" message="tns:userLogin" />
+      <output wsam:Action="http://shares.me.org/PurchaseShares/userLoginResponse" message="tns:userLoginResponse" />
+    </operation>
+    <operation name="addStock">
+      <input wsam:Action="http://shares.me.org/PurchaseShares/addStockRequest" message="tns:addStock" />
+      <output wsam:Action="http://shares.me.org/PurchaseShares/addStockResponse" message="tns:addStockResponse" />
+    </operation>
+    <operation name="getFname">
+      <input wsam:Action="http://shares.me.org/PurchaseShares/getFnameRequest" message="tns:getFname" />
+      <output wsam:Action="http://shares.me.org/PurchaseShares/getFnameResponse" message="tns:getFnameResponse" />
+    </operation>
+    <operation name="addUser">
+      <input wsam:Action="http://shares.me.org/PurchaseShares/addUserRequest" message="tns:addUser" />
+      <output wsam:Action="http://shares.me.org/PurchaseShares/addUserResponse" message="tns:addUserResponse" />
+    </operation>
+  </portType>
+  <binding name="PurchaseSharesPortBinding" type="tns:PurchaseShares">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getCurrencyNames">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getShares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="IOException_Exception">
+        <soap:fault use="literal" name="IOException_Exception" namespace="" />
+      </fault>
+      <fault name="ParseException_Exception">
+        <soap:fault use="literal" name="ParseException_Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="buyShares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="userLogin">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addStock">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getFname">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PurchaseShares">
+    <port name="PurchaseSharesPort" binding="tns:PurchaseSharesPortBinding">
+      <soap:address location="http://localhost:8080/PurchaseShares/PurchaseShares" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:////nasstudusers/6$/N0562762/Year%20Three/Assesment%20One/WebServicesJava/src/java/Shows.xsd" uri="src/conf/xml-resources/jaxb/MovieRequest/Shows.xsd"/>
+    <system systemId="file:////nasstudusers/6$/N0562762/Year%20Three/Assesment%20One/WebServicesJava/src/java/Show/Shows.xsd" uri="src/conf/xml-resources/jaxb/SharesRequest/Shows.xsd"/>
+    <system systemId="file:////nasstudusers/6$/N0562762/Year%20Three/Assesment%20One/WebServicesJava/src/java/Shares/Shares.xsd" uri="src/conf/xml-resources/jaxb/ShareRequest/Shares.xsd"/>
+    <system systemId="http://www.restfulwebservices.net/rest/StockQuoteService.svc?wsdl" uri="src/conf/xml-resources/web-service-references/StockQuoteService/wsdl/www.restfulwebservices.net/rest/StockQuoteService.svc.wsdl"/>
+    <system systemId="http://www.restfulwebservices.net/rest/StockQuoteService.svc?wsdl=wsdl1" uri="src/conf/xml-resources/web-service-references/StockQuoteService/wsdl/www.restfulwebservices.net/rest/StockQuoteService.svc.wsdl_wsdl1.wsdl"/>
+    <system systemId="http://www.restfulwebservices.net/rest/StockQuoteService.svc?wsdl=wsdl0" uri="src/conf/xml-resources/web-service-references/StockQuoteService/wsdl/www.restfulwebservices.net/rest/StockQuoteService.svc.wsdl_wsdl0.wsdl"/>
+    <system systemId="http://www.restfulwebservices.net/rest/StockQuoteService.svc?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/StockQuoteService/wsdl/www.restfulwebservices.net/rest/StockQuoteService.svc.xsd_xsd0.xsd"/>
+    <system systemId="http://www.restfulwebservices.net/rest/StockQuoteService.svc?xsd=xsd1" uri="src/conf/xml-resources/web-service-references/StockQuoteService/wsdl/www.restfulwebservices.net/rest/StockQuoteService.svc.xsd_xsd1.xsd"/>
+    <system systemId="http://www.restfulwebservices.net/rest/StockQuoteService.svc?xsd=xsd2" uri="src/conf/xml-resources/web-service-references/StockQuoteService/wsdl/www.restfulwebservices.net/rest/StockQuoteService.svc.xsd_xsd2.xsd"/>
+    <system systemId="https://bondsrealtime.xignite.com/xBondsRealTime.xml/ListBondTypes?" uri="src/conf/xml-resources/web-service-references/ListBondTypes_/wsdl/bondsrealtime.xignite.com/xBondsRealTime.xml/ListBondTypes.xml"/>
+    <system systemId="http://www.webservicex.com/stockquote.asmx?WSDL" uri="src/conf/xml-resources/web-service-references/stockquote_1/wsdl/www.webservicex.com/stockquote.asmx.wsdl"/>
+    <system systemId="http://www.webservicex.net/stockquote.asmx?WSDL" uri="src/conf/xml-resources/web-service-references/stockquote/wsdl/www.webservicex.net/stockquote.asmx.wsdl"/>
+    <system systemId="https://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?wsdl" uri="src/conf/xml-resources/web-service-references/delayedstockquote/wsdl/ws.cdyne.com/delayedstockquote/delayedstockquote.asmx.wsdl"/>
+    <system systemId="http://www.gama-system.com/webservices/stockquotes.asmx?wsdl" uri="src/conf/xml-resources/web-service-references/stockquotes/wsdl/webservices.gama-system.com/stockquotes.asmx.wsdl"/>
+    <system systemId="http://ws.eoddata.com/data.asmx?wsdl" uri="src/conf/xml-resources/web-service-references/data/wsdl/ws.eoddata.com/data.asmx.wsdl"/>
+    <system systemId="http://localhost:8080/UserAuthentication/UserAuthentication?wsdl" uri="src/conf/xml-resources/web-service-references/UserAuthentication/wsdl/localhost_8080/UserAuthentication/UserAuthentication.wsdl"/>
+    <system systemId="http://localhost:8080/UserAuthentication/UserAuthentication?xsd=1" uri="src/conf/xml-resources/web-service-references/UserAuthentication/wsdl/localhost_8080/UserAuthentication/UserAuthentication.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CurrencyConvertor/CurrencyConversionWSService?WSDL" uri="src/conf/xml-resources/web-service-references/CurrencyConversionWSService/wsdl/localhost_8080/CurrencyConvertor/CurrencyConversionWSService.wsdl"/>
+    <system systemId="http://localhost:8080/CurrencyConvertor/CurrencyConversionWSService?xsd=1" uri="src/conf/xml-resources/web-service-references/CurrencyConversionWSService/wsdl/localhost_8080/CurrencyConvertor/CurrencyConversionWSService.xsd_1.xsd"/>
+</catalog>

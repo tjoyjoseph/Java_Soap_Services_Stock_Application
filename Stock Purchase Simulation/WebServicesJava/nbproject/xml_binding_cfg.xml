@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='WebServicesJava' version='1.0'>
+	<schema type='-xmlschema' package='shareCompanies' name='ShareRequest'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/ShareRequest/Shares.xsd' origLocation='\\nasstudusers\6$\N0562762\Year Three\Assesment One\WebServicesJava\src\java\Shares\Shares.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://xml.netbeans.org/schema/Shows"
+    xmlns:tns="http://xml.netbeans.org/schema/Shows"
+    elementFormDefault="qualified">
+    <xsd:complexType name="companyShare">
+        <xsd:sequence>
+            <xsd:element name="companyName" type="xsd:string"></xsd:element>
+            <xsd:element name="companySymbol" type="xsd:string"></xsd:element>
+            <xsd:element name="numOfAvailShares">
+                <xsd:complexType>
+                    <xsd:sequence/>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="sharePrice">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="currency" type="xsd:string"></xsd:element>
+                        <xsd:element name="value" type="xsd:double"></xsd:element>
+                        <xsd:element name="dateOfLastUpdate" type="xsd:date"></xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="shareTrade">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="companyShares" type="tns:companyShare" maxOccurs="unbounded" minOccurs="0"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

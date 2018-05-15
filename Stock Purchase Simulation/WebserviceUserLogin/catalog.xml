@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/Toby%20Joseph/OneDrive%20-%20Nottingham%20Trent%20University/Year%203/Server%20Centric%20Computing/Server%20Centric%20Computing/Assesment%20One/WebServices_v4/WebserviceUserLogin/src/java/UserLogin/UserDetails.xsd" uri="src/conf/xml-resources/jaxb/UserDetails/UserDetails.xsd"/>
+</catalog>

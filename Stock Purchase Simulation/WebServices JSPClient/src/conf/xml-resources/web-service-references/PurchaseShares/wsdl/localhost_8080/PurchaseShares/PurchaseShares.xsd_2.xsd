@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://shares.me.org/" xmlns:ns1="http://xml.netbeans.org/schema/Shows" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://shares.me.org/">
+
+<xs:import namespace="http://xml.netbeans.org/schema/Shows" schemaLocation="http://localhost:8080/PurchaseShares/PurchaseShares?xsd=1"/>
+
+<xs:element name="IOException" type="tns:IOException"/>
+
+<xs:element name="addStock" type="tns:addStock"/>
+
+<xs:element name="addStockResponse" type="tns:addStockResponse"/>
+
+<xs:element name="addUser" type="tns:addUser"/>
+
+<xs:element name="addUserResponse" type="tns:addUserResponse"/>
+
+<xs:element name="buyShares" type="tns:buyShares"/>
+
+<xs:element name="buySharesResponse" type="tns:buySharesResponse"/>
+
+<xs:element name="getCurrencyNames" type="tns:getCurrencyNames"/>
+
+<xs:element name="getCurrencyNamesResponse" type="tns:getCurrencyNamesResponse"/>
+
+<xs:element name="getFname" type="tns:getFname"/>
+
+<xs:element name="getFnameResponse" type="tns:getFnameResponse"/>
+
+<xs:element name="getShares" type="tns:getShares"/>
+
+<xs:element name="getSharesResponse" type="tns:getSharesResponse"/>
+
+<xs:element name="userLogin" type="tns:userLogin"/>
+
+<xs:element name="userLoginResponse" type="tns:userLoginResponse"/>
+
+<xs:complexType name="addStock">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="symbol" type="xs:string" minOccurs="0"/>
+<xs:element name="volume" type="xs:int"/>
+<xs:element name="value" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addStockResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buyShares">
+<xs:sequence>
+<xs:element name="companyName" type="xs:string" minOccurs="0"/>
+<xs:element name="sharesWanted" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buySharesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IOException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getShares">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSharesResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:companyShare" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="userLogin">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="userLoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUser">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="firstname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFname">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFnameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCurrencyNames">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCurrencyNamesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
